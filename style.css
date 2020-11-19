@@ -28,8 +28,8 @@ h2 {
     position: fixed;
     bottom: 50px;
     right: 50px;
-    padding-top: 0.1em;
-    font-size: 3rem;
+    padding-top: 0.05em;
+    font-size: 2rem;
     font-weight: 200;
     text-align: center;
 }
