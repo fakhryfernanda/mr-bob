@@ -3,10 +3,66 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 h1 {
     font-size: 2rem;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+#scroll-up-btn {
+    z-index: 2;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding-top: 0.1em;
+    font-size: 3rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+/* ==============
+   NAVIGATION MENU
+   ==============
+*/
+
+nav {
+    display: flex;
+    background-color: #f5eced;
+    padding: 1em 2em;
+}
+
+#nav-logo {
+    width: 50%;
+}
+
+#nav-menu {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 2em;
+}
+
+#nav-menu a {
+    margin-right: 2em;
+    font-weight: 600;
+}
+
+#nav-menu a:hover {
+    color: orange;
 }
 
 #landing-image, #menu1, #menu2, #about {
@@ -43,7 +99,7 @@ h1 {
 }
 
 #landing-button {
-    background-color: red;
+    background-color: #d72324;
     font-size: 1.2rem;
     padding: 0.5em 1em;
     display: inline-block;
@@ -110,12 +166,12 @@ h1 {
 .price {
     padding: 0.5em 1em;
     display: inline-block;
-    cursor: pointer;
+    /* cursor: pointer; */
     border-radius: 5px;
 }
 
 #menu1 .price {
-    background-color: red;
+    background-color: #d72324;
     color: white;
 }
 
@@ -125,19 +181,19 @@ h1 {
 }
 
 #menu1 {
-    background-color: red;
+    background-color: #d72324;
     color: white;
     padding-top: 2em;
 }
 
 #menu1 .dish {
-    color: red;
+    color: #d72324;
     background-color: #f5eced;
 }
 
 #menu2 {
     background-color: #f5eced;
-    color: red;
+    color: #d72324;
     padding-top: 2em;
 }
 
@@ -146,15 +202,16 @@ h1 {
     background-color: #3e3536;
 }
 
+/* =============
+   ABOUT
+   ============= */
+
 #about {
     text-align: center;
     color: white;
     background-image: url(images/about.jpg);
     background-size: cover;
     position: relative;
-}
-
-#about h1 {
 }
 
 #about-overlay {
@@ -187,4 +244,30 @@ h1 {
     text-align: left;
     width: 50%;
     font-size: 1.2rem;
+}
+
+/* ==============
+   FOOTER
+   ============== */
+
+#footer {
+    padding: 2em 2em;
+    background-color: #f5eced;
+    display: flex;
+    font-weight: 600;
+}
+
+#footer div:first-child {
+    width: 40%;
+    text-align: center;
+}
+
+#footer-icons {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#footer-icons p {
+    margin-right: 2em;
 }
