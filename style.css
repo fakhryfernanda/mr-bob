@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#landing-image, #menu1, #menu2, #about {
+    height: 100vh;
+}
+
+#landing-image {
+    background: url(images/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#landing-overlay {
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#landing-text {
+    z-index: 1;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+#landing-text p {
+    width: 65%;
+    margin: auto;
+}
+
+#landing-button {
+    background-color: red;
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* =====================
+   MENU
+   ===================== */
+
+#menu1-content, #menu2-content {
+    height: 80%;
+    margin-top: 2em;
+}
+
+#menu1, #menu2 {
+    text-align: center;
+}
+
+.dish {
+    display: flex;
+    height: 50%;
+}
+
+.dish-image {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+#menu1 .dish-image:first-child {
+    background-image: url(images/grilled-chicken.jpg);
+}
+
+#menu1 .dish-image:last-child {
+    background-image: url(images/kebab.jpg);
+}
+
+#menu2 .dish-image:first-child {
+    background-image: url(images/burger.jpg);
+}
+
+#menu2 .dish-image:last-child {
+    background-image: url(images/french-fries.jpg);
+
+}
+
+.dish-desc {
+    width: 50%;
+    padding: 2em;
+}
+
+.dish-desc.left {
+    text-align: left;
+    padding-right: 3em;
+}
+
+.dish-desc.right {
+    text-align: right;
+    padding-left: 3em;
+}
+
+.price {
+    padding: 0.5em 1em;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#menu1 .price {
+    background-color: red;
+    color: white;
+}
+
+#menu2 .price {
+    background-color: white;
+    color: black;
+}
+
+#menu1 {
+    background-color: red;
+    color: white;
+    padding-top: 2em;
+}
+
+#menu1 .dish {
+    color: red;
+    background-color: #f5eced;
+}
+
+#menu2 {
+    background-color: #f5eced;
+    color: red;
+    padding-top: 2em;
+}
+
+#menu2 .dish {
+    color: white;
+    background-color: #3e3536;
+}
+
+#about {
+    text-align: center;
+    color: white;
+    background-image: url(images/about.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+#about h1 {
+}
+
+#about-overlay {
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#about-content {
+    display: flex;
+    margin-top: 4em;
+    padding: 2em 4em;
+}
+
+#about-logo-container {
+    width: 50%;
+    padding: 0 2em;
+}
+
+#about-logo {
+    height: 300px;
+    width: 300px;
+    background-color: #f0502e;
+    border-radius: 50%;
+}
+
+#about-text {
+    padding: 0 2em;
+    text-align: left;
+    width: 50%;
+    font-size: 1.2rem;
+}
